@@ -1,0 +1,16 @@
+* { margin:0; padding:0;  }
+html,body,#app{
+    height: 100%;
+}
+body {
+    font-size: 16px; 
+    line-height: 1.5; 
+    font-family:'Roboto-Regular;','Microsoft Yahei','simsun','arial','tahoma';  
+    background:url(../img/bg.jpg);
+}
+a { text-decoration: none; color: #666; background: none }
+ul, ol { list-style: none; }
+.clearfix{ clear: both; content: ""; display: block; overflow: hidden }
+.clear{clear: both;}
+.fl{ float: left; }
+.fr{float: right;}
