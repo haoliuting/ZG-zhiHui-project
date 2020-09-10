@@ -8,41 +8,42 @@
 
 <script>
 export default {
-  props:{
-    title:{
-      required:true,
-      type:String
-    }
-  }
+  props: {
+    title: {
+      required: true,
+      type: String,
+    },
+  },
 };
 </script>
 
 <style scoped>
-.title{
+.title {
   width: 100%;
   height: 52px;
   box-sizing: border-box;
   border: 1px dashed #fff;
   overflow: hidden;
+  background: #0d1554;
 }
-.dot{
+.dot {
   width: 6px;
   height: 6px;
   margin-left: 10px;
-  background: #008AFF;
+  background: #008aff;
   border-radius: 50%;
   margin-top: 23px;
   float: left;
 }
-.title-con{
+.title-con {
   color: #fff;
   line-height: 52px;
-  font-size: 17px;
+  font-size: 14px;
   margin-left: 15px;
   float: left;
 }
-.more{
-  color: #008AFF;
+.more {
+  color: #008aff;
   width: 28px;
   height: 28px;
   border: 1px dashed #fff;

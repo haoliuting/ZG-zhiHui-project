@@ -179,7 +179,8 @@ export default {
   flex: 1;
 }
 .left h3 {
-  font-size: 25px;
+  font-size: 23px;
+  font-weight: 400;
   line-height: 30px;
   color: #ffffff;
   opacity: 1;

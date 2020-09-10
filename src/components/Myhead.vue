@@ -91,9 +91,10 @@ export default {
 <style scoped>
 header{
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     height:90px;
+    z-index: 50;
 }
 .head{
     width:1300px;

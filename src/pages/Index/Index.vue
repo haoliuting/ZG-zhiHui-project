@@ -1,7 +1,7 @@
 <template>
   <div
     class="container"
-    :style="{background:'url('+imgs.bgImg+') center no-repeat', backgroundSize:'100%'}"
+    :style="{background:'url('+imgs.bgImg+') center no-repeat', backgroundSize:'100% 100%'}"
   >
     <!-- 头部 -->
     <my-head></my-head>
@@ -36,12 +36,15 @@ export default {
       },
     };
   },
+  mounted(){
+   
+  }
 };
 </script>
 <style scoped>
 .container {
   position: relative;
-  height: 100%;
+  /* height: 100%; */
 }
 .main{
     padding: 90px 30px 0;
