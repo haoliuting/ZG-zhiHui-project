@@ -43,6 +43,7 @@ export default {
 </script>
 <style scoped>
 .container {
+  min-width: 1920px;
   position: relative;
   /* height: 100%; */
 }

@@ -1,18 +1,31 @@
 <template>
-  <div class="title">
-    <div class="dot"></div>
-    <div class="title-con">{{title}}</div>
-    <div class="more iconfont icon-gengduo"></div>
+  <div
+    class="title"
+    :style="{background:`url(${imgs.bg}) center center no-repeat`,backgroundSize:'100% 100%'}"
+  >
+    <div class="tit-con">
+      <div class="dot"></div>
+      <div class="title-con">{{title}}</div>
+      <div class="more iconfont icon-gengduo"></div>
+    </div>
   </div>
 </template>
 
 <script>
+import bg from "@/assets/img/tit-bg.png";
 export default {
   props: {
     title: {
       required: true,
       type: String,
     },
+  },
+  data() {
+    return {
+      imgs: {
+        bg,
+      },
+    };
   },
 };
 </script>
@@ -22,7 +35,14 @@ export default {
   width: 100%;
   height: 52px;
   box-sizing: border-box;
-  border: 1px dashed #fff;
+  overflow: hidden;
+}
+.tit-con {
+  width: 100%;
+  height: 46px;
+  margin-top: 6px;
+  box-sizing: border-box;
+  /* border: 1px dashed #fff; */
   overflow: hidden;
   background: #0d1554;
 }
