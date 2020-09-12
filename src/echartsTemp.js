@@ -24,3 +24,63 @@ var option = {
 
 // 使用刚指定的配置项和数据显示图表。
 myChart.setOption(option);
+
+
+
+<div class="item">
+<div class="info">
+  <div class="address">天河路</div>
+  <div class="num">47.32K</div>
+  <!-- 上要 类名 shang ,下要xia类名 -->
+  <div class="trend xia">
+    +12.6%
+    <i class="iconfont icon-xiajiantou"></i>
+
+    <!-- 此处是上下箭头,使用条件判断战士即可 -->
+    <!-- <i class="iconfont icon-shangjiantou"></i>
+    <i class="iconfont icon-xiajiantou"></i>-->
+  </div>
+</div>
+<div class="right table">
+  <div id="table3" class="line"></div>
+  <div class="right-border"></div>
+</div>
+</div>
+<div class="item">
+<div class="info">
+  <div class="address">天河路</div>
+  <div class="num">47.32K</div>
+  <!-- 上要 类名 shang ,下要xia类名 -->
+  <div class="trend xia">
+    +12.6%
+    <i class="iconfont icon-xiajiantou"></i>
+
+    <!-- 此处是上下箭头,使用条件判断战士即可 -->
+    <!-- <i class="iconfont icon-shangjiantou"></i>
+    <i class="iconfont icon-xiajiantou"></i>-->
+  </div>
+</div>
+<div class="right table">
+  <div id="table4" class="line"></div>
+  <div class="right-border"></div>
+</div>
+</div>
+<div class="item">
+<div class="info">
+  <div class="address">天河路</div>
+  <div class="num">47.32K</div>
+  <!-- 上要 类名 shang ,下要xia类名 -->
+  <div class="trend xia">
+    +12.6%
+    <i class="iconfont icon-xiajiantou"></i>
+
+    <!-- 此处是上下箭头,使用条件判断战士即可 -->
+    <!-- <i class="iconfont icon-shangjiantou"></i>
+    <i class="iconfont icon-xiajiantou"></i>-->
+  </div>
+</div>
+<div class="right table">
+  <div id="table5" class="line"></div>
+  <div class="right-border"></div>
+</div>
+</div>

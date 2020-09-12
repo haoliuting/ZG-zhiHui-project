@@ -173,7 +173,8 @@ export default {
   display: flex;
 }
 .left-chart {
-  width: 244px;
+  /* width: 244px; */
+  width: 50%;
   height: 167px;
 }
 .left-bar{

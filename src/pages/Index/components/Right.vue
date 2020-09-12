@@ -24,6 +24,7 @@ export default {
 
 <style scoped>
 .right{
-  width: 436px;
+  /* width: 436px; */
+  width: 25%;
 }
 </style>

@@ -6,29 +6,20 @@
     <div class="charts">
       <div class="inner">
         <!-- 每一个 -->
-        <div class="item">
-          <div class="item-chart"></div>
-          <div class="item-text">高峰站点</div>
-        </div>
-        <div class="item">
-          <div class="item-chart"></div>
-          <div class="item-text">卡口</div>
-        </div>
-        <div class="item">
-          <div class="item-chart"></div>
-          <div class="item-text">高清球机</div>
-        </div>
-        <div class="item">
-          <div class="item-chart"></div>
-          <div class="item-text">高空枪机</div>
-        </div>
-        <div class="item">
-          <div class="item-chart"></div>
-          <div class="item-text">模拟枪机</div>
-        </div>
-        <div class="item">
-          <div class="item-chart"></div>
-          <div class="item-text">高清枪机</div>
+        <div class="item" v-for="item in mockData" :key="item.id">
+          <div class="item-main">
+            <div class="item-chart">
+              <!-- 仪表盘 -->
+              <left-panel 
+              :outerColor="item.outerColor"
+              :innerColor="item.innerColor"
+              :percent="item.percent"
+              :num="item.num"
+              :name="item.name"
+              ></left-panel>
+            </div>
+            <div class="item-text">{{item.title}}</div>
+          </div>
         </div>
       </div>
     </div>
@@ -63,10 +54,72 @@
 </template>
 
 <script>
+import leftPanel from "./left-panel"
 export default {
+  components:{
+    leftPanel
+  },
   data() {
     return {
       d: [1, 2, 3, 4, 6, 5],
+      mockData:[
+        {
+          id:1,
+          outerColor:"rgb(123,0,81)",
+          innerColor:"rgb(252,71,146)",
+          percent:0.3,
+          num:58,
+          name:"数量",
+          title:"高峰站点"
+        },
+        {
+          id:2,
+          outerColor:"rgb(8,59,124)",
+          innerColor:"rgb(12,114,255)",
+          percent:0.5,
+          num:58,
+          name:"数量",
+          title:"卡口"
+        },
+        {
+          id:3,
+          outerColor:"rgb(8,59,124)",
+          innerColor:"rgb(12,114,255)",
+          percent:0.7,
+          num:58,
+          name:"数量",
+          title:"高清球机"
+        },
+        {
+          id:4,
+          outerColor:"rgb(8,59,124)",
+          innerColor:"rgb(12,114,255)",
+          percent:0.7,
+          num:58,
+          name:"数量",
+          title:"高空枪机"
+        },
+        {
+          id:5,
+          outerColor:"rgb(8,59,124)",
+          innerColor:"rgb(12,114,255)",
+          percent:0.7,
+          num:58,
+          name:"数量",
+          title:"模拟枪机"
+        },
+        {
+          id:6,
+          outerColor:"rgb(8,59,124)",
+          innerColor:"rgb(12,114,255)",
+          percent:0.7,
+          num:58,
+          name:"数量",
+          title:"高清枪机"
+        },
+
+
+      ]
     };
   },
   methods: {
@@ -149,19 +202,20 @@ export default {
   background: rgba(14, 16, 31, 0.55);
 }
 .inner {
-  width: 450px;
   overflow: hidden;
 }
 .item {
-  width: 118px;
-  margin-right: 31px;
+  width: 33.33%;
+  padding-right: 11px;
   margin-bottom: 12px;
   float: left;
+  box-sizing: border-box;
 }
 .item-chart {
-  width: 118px;
-  height: 118px;
+  width: 100%;
+  height: 100px;
   border: 1px #ffffff dashed;
+  padding: 5px 0;
 }
 .item-text {
   font-size: 12px;
@@ -181,10 +235,16 @@ export default {
   line-height: 20px;
   line-height: 43px;
   padding-right: 26.99px;
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: flex;
+}
+.table-header div,
+.line div {
+  flex: 1;
 }
 .line {
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: flex;
   margin-right: 26.99px;
   color: #ffffff;
   font-size: 12px;
@@ -201,20 +261,16 @@ export default {
   margin-top: 13px;
 }
 .street {
-  float: left;
   width: 177px;
   margin-left: 12px;
 }
 .video-num {
-  float: left;
   width: 83px;
 }
 .slot-num {
-  float: left;
   width: 83px;
 }
 .dot-num {
-  float: left;
   width: 53px;
 }
 .main {

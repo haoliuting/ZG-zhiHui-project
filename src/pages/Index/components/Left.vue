@@ -21,6 +21,7 @@ export default {
 
 <style scoped>
 .left{
-  width: 436px;
+  /* width: 436px; */
+  width: 25%;
 }
 </style>

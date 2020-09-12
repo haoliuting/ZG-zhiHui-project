@@ -43,12 +43,13 @@ export default {
 </script>
 <style scoped>
 .container {
-  min-width: 1920px;
+  /* min-width: 1920px; */
   position: relative;
   /* height: 100%; */
 }
 .main{
-    padding: 90px 30px 0;
+    /* padding: 90px 30px 0; */
+    padding: 90px 10px 0;
     display: flex;
 }
 </style>

@@ -8,7 +8,7 @@
     </div>
     <div class="item">
       <div class="item-con">
-        <img class="item-img" :src="imgs.p1" alt />
+        <img class="item-img" :src="imgs.p2" alt />
         <div class="item-text">主要区域监控视频2</div>
       </div>
     </div>

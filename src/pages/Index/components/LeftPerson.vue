@@ -22,80 +22,88 @@
         <div class="inner">
           <!-- 每一项 -->
           <div class="item">
-            <div class="info">
-              <div class="address">天河路</div>
-              <div class="num">47.32K</div>
-              <!-- 上要 类名 shang ,下要xia类名 -->
-              <div class="trend shang">
-                +12.6%
-                <i class="iconfont icon-shangjiantou"></i>
+            <div class="item-con">
+              <div class="info">
+                <div class="address">天河路</div>
+                <div class="num">47.32K</div>
+                <!-- 上要 类名 shang ,下要xia类名 -->
+                <div class="trend shang">
+                  +12.6%
+                  <i class="iconfont icon-shangjiantou"></i>
 
-                <!-- 此处是上下箭头,使用条件判断战士即可 -->
-                <!-- <i class="iconfont icon-shangjiantou"></i>
-                <i class="iconfont icon-xiajiantou"></i>-->
+                  <!-- 此处是上下箭头,使用条件判断战士即可 -->
+                  <!-- <i class="iconfont icon-shangjiantou"></i>
+                  <i class="iconfont icon-xiajiantou"></i>-->
+                </div>
               </div>
-            </div>
-            <div class="right table">
-              <div id="table2" class="line"></div>
-              <div class="right-border"></div>
+              <div class="right table">
+                <div id="table2" class="line"></div>
+                <div class="right-border"></div>
+              </div>
             </div>
           </div>
 
           <div class="item">
-            <div class="info">
-              <div class="address">天河路</div>
-              <div class="num">47.32K</div>
-              <!-- 上要 类名 shang ,下要xia类名 -->
-              <div class="trend xia">
-                +12.6%
-                <i class="iconfont icon-xiajiantou"></i>
+            <div class="item-con">
+              <div class="info">
+                <div class="address">天河路</div>
+                <div class="num">47.32K</div>
+                <!-- 上要 类名 shang ,下要xia类名 -->
+                <div class="trend xia">
+                  +12.6%
+                  <i class="iconfont icon-xiajiantou"></i>
 
-                <!-- 此处是上下箭头,使用条件判断战士即可 -->
-                <!-- <i class="iconfont icon-shangjiantou"></i>
-                <i class="iconfont icon-xiajiantou"></i>-->
+                  <!-- 此处是上下箭头,使用条件判断战士即可 -->
+                  <!-- <i class="iconfont icon-shangjiantou"></i>
+                  <i class="iconfont icon-xiajiantou"></i>-->
+                </div>
               </div>
-            </div>
-            <div class="right table">
-              <div id="table3" class="line"></div>
-              <div class="right-border"></div>
+              <div class="right table">
+                <div id="table3" class="line"></div>
+                <div class="right-border"></div>
+              </div>
             </div>
           </div>
           <div class="item">
-            <div class="info">
-              <div class="address">天河路</div>
-              <div class="num">47.32K</div>
-              <!-- 上要 类名 shang ,下要xia类名 -->
-              <div class="trend xia">
-                +12.6%
-                <i class="iconfont icon-xiajiantou"></i>
+            <div class="item-con">
+              <div class="info">
+                <div class="address">天河路</div>
+                <div class="num">47.32K</div>
+                <!-- 上要 类名 shang ,下要xia类名 -->
+                <div class="trend xia">
+                  +12.6%
+                  <i class="iconfont icon-xiajiantou"></i>
 
-                <!-- 此处是上下箭头,使用条件判断战士即可 -->
-                <!-- <i class="iconfont icon-shangjiantou"></i>
-                <i class="iconfont icon-xiajiantou"></i>-->
+                  <!-- 此处是上下箭头,使用条件判断战士即可 -->
+                  <!-- <i class="iconfont icon-shangjiantou"></i>
+                  <i class="iconfont icon-xiajiantou"></i>-->
+                </div>
               </div>
-            </div>
-            <div class="right table">
-              <div id="table4" class="line"></div>
-              <div class="right-border"></div>
+              <div class="right table">
+                <div id="table4" class="line"></div>
+                <div class="right-border"></div>
+              </div>
             </div>
           </div>
           <div class="item">
-            <div class="info">
-              <div class="address">天河路</div>
-              <div class="num">47.32K</div>
-              <!-- 上要 类名 shang ,下要xia类名 -->
-              <div class="trend xia">
-                +12.6%
-                <i class="iconfont icon-xiajiantou"></i>
+            <div class="item-con">
+              <div class="info">
+                <div class="address">天河路</div>
+                <div class="num">47.32K</div>
+                <!-- 上要 类名 shang ,下要xia类名 -->
+                <div class="trend xia">
+                  +12.6%
+                  <i class="iconfont icon-xiajiantou"></i>
 
-                <!-- 此处是上下箭头,使用条件判断战士即可 -->
-                <!-- <i class="iconfont icon-shangjiantou"></i>
-                <i class="iconfont icon-xiajiantou"></i>-->
+                  <!-- 此处是上下箭头,使用条件判断战士即可 -->
+                  <!-- <i class="iconfont icon-shangjiantou"></i>
+                  <i class="iconfont icon-xiajiantou"></i>-->
+                </div>
               </div>
-            </div>
-            <div class="right table">
-              <div id="table5" class="line"></div>
-              <div class="right-border"></div>
+              <div class="right table">
+                <div id="table5" class="line"></div>
+                <div class="right-border"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -192,20 +200,21 @@ export default {
   opacity: 1;
 }
 .right {
-  width: 300px;
+  width: 242px;
   height: 58px;
   position: relative;
 }
 .right .line {
-  width: 100%;
+  width: 126%;
   height: 100%;
+  margin-left: -13%;
 }
 .right-border {
   position: absolute;
   border: 1px dashed #fff;
   width: 242px;
   height: 58px;
-  left: 28px;
+  left: 0px;
   top: 0;
 }
 .detail {
@@ -213,14 +222,18 @@ export default {
   padding: 10px;
 }
 .inner {
-  width: 430px;
+  /* width: 430px; */
+  width: 100%;
 }
 .item {
-  width: 201px;
-  margin-right: 14px;
+  width: 50%;
+  padding-right: 14px;
+  box-sizing: border-box;
   float: left;
   color: #fff;
   margin-top: 21px;
+}
+.item-con {
 }
 .info {
   overflow: hidden;
@@ -252,22 +265,20 @@ export default {
 .xia {
   color: #23b899;
 }
-.table{
+.table {
   width: 100%;
   height: 35.88px;
   float: none;
   margin-top: 10px;
 }
-.table .line{
-  margin-left: -23px;
-  width: 250px;
-
+.table .line {
+  margin-left: -13%;
+  width: 126%;
 }
-.table .right-border{
-  width: 202px;
+.table .right-border {
+  width: 100%;
   height: 38px;
   left: 0;
   top: -1px;
-
 }
 </style>

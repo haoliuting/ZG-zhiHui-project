@@ -66,7 +66,7 @@ export default {
             name: "面积模式",
             type: "pie",
             radius: [30, 110],
-            center: ["40%", "60%"],
+            center: ["50%", "60%"],
             roseType: "area",
             data: this.mockData,
           },
@@ -102,10 +102,11 @@ export default {
   height: 35px;
   border-radius: 50%;
   position: absolute;
-  left: 159px;
-  top: 155px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-48%,24%);
   background: #36446a;
-  z-index: 50;
+  z-index: 10;
 }
 .text {
   line-height: 30px;
